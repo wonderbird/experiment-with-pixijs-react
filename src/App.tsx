@@ -1,24 +1,30 @@
+import * as PIXI from 'pixi.js';
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import createScene from "./createScene";
 
 function App() {
+  const app = new PIXI.Application();
+  app.init({background: "#1099bb", resizeTo: window, hello: true})
+    .then(async () => {
+      const appContainer = document.body.querySelector('#root .App');
+      if (typeof appContainer === 'undefined' || appContainer === null) {
+        console.error("App container not found");
+        return;
+      }
+
+      const existingCanvas = appContainer?.querySelector('canvas');
+      if (typeof existingCanvas !== 'undefined' && existingCanvas !== null) {
+        existingCanvas.remove();
+      }
+
+      appContainer.appendChild(app.canvas);
+
+      await createScene(app);
+    });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }
