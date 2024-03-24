@@ -1,8 +1,15 @@
-# Getting Started with Create React App
+# Experiment with the PixiJS Creation Engine (TypeScript and React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project shows basic steps with [PixiJS](https://pixijs.com/) in TypeScript and React.
 
-## Available Scripts
+See also: [experiment-with-pixijs](https://github.com/wonderbird/experiment-with-pixijs)
+
+## Thanks
+
+Many thanks to [JetBrains](https://www.jetbrains.com/?from=experiment-with-pixijs) who provide
+an [Open Source License](https://www.jetbrains.com/community/opensource/) for this project ❤️.
+
+## Developer Guide
 
 In the project directory, you can run:
 
@@ -41,6 +48,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [PixiJS: Getting Started (v8.x)](https://pixijs.com/8.x/guides/basics/getting-started)
+- [JetBrains: Open Source Licenses](https://www.jetbrains.com/community/opensource/)
+- [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started)
+- [React documentation](https://reactjs.org/)
